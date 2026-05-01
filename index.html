@@ -812,6 +812,8 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 
 // CRM API endpoint — the Sudspect CRM deployed URL
 const CRM_API = 'https://www.perplexity.ai/computer/a/sudspect-crm-z0ydBV9CRuGUppFMi7ghFA/api/public/lead';
+const RESEND_API = 'https://api.resend.com/emails';
+const RESEND_KEY = 're_BQ716i55_5R9TyD1UDUeGMSCvhreeceSA';
 
 // Nav scroll shadow
 const nav = document.getElementById('nav');
@@ -875,18 +877,47 @@ form.addEventListener('submit', async e => {
   };
 
   try {
-    const res = await fetch(CRM_API, {
+    // Send email notification via Resend
+    const emailText = [
+      'New Lead from sudspect.com',
+      '',
+      'Name: '     + payload.contact_name,
+      'Email: '    + payload.email,
+      'Phone: '    + (payload.phone || 'N/A'),
+      'Property: ' + payload.name,
+      'City: '     + payload.city,
+      'Units: '    + payload.units,
+      'Type: '     + payload.property_type,
+      'Message: '  + (payload.message || 'N/A'),
+    ].join('\n');
+
+    const emailRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer re_BQ716i55_5R9TyD1UDUeGMSCvhreeceSA'
+      },
+      body: JSON.stringify({
+        from: 'Sudspect Website <hello@sudspect.com>',
+        to: ['hello@sudspect.com'],
+        subject: 'New Lead: ' + payload.name + ' — ' + payload.city,
+        text: emailText
+      })
+    });
+
+    // Also attempt CRM (best effort, no block)
+    fetch(CRM_API, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
-    });
+    }).catch(() => {});
 
-    if (res.ok) {
+    if (emailRes.ok || emailRes.status === 200) {
       form.reset();
       success.style.display = 'flex';
       btnSubmit.style.display = 'none';
     } else {
-      throw new Error('CRM error ' + res.status);
+      throw new Error('Send error ' + emailRes.status);
     }
   } catch (err) {
     // Fallback: mailto
