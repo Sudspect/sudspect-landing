@@ -1,0 +1,8 @@
+{
+  "name": "sudspect-landing",
+  "version": "1.0.0",
+  "description": "Sudspect property manager landing page",
+  "scripts": {
+    "build": "echo 'No build needed'"
+  }
+}
