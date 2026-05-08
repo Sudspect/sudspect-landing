@@ -460,26 +460,25 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 
         <div class="hero-right" id="video">
           <div class="video-frame" id="video-container">
-            <div id="video-thumb" onclick="playVideo()" style="position:relative;width:100%;height:100%;cursor:pointer;background:#1e2e1e;">
+            <div id="video-thumb" onclick="playVideo()" style="position:relative;width:100%;height:100%;cursor:pointer;background:#1a2a1a;">
               <img
-                src="https://img.youtube.com/vi/cC5JToVEyiw/maxresdefault.jpg"
-                alt="Watch Sudspect Demo"
-                style="width:100%;height:100%;object-fit:cover;opacity:0.85;"
-                onerror="this.src='https://img.youtube.com/vi/cC5JToVEyiw/hqdefault.jpg'"
+                src="https://raw.githubusercontent.com/Sudspect/sudspect-landing/main/sudspect_demo_thumb.jpg"
+                alt="Watch Sudspect Dog Wash Machine Demo"
+                style="width:100%;height:100%;object-fit:cover;opacity:0.88;"
               />
               <!-- Play button -->
-              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;background:rgba(232,88,10,0.92);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,0.45);">
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;background:rgba(232,88,10,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 28px rgba(0,0,0,0.55);transition:transform 0.2s;" onmouseover="this.style.transform='translate(-50%,-50%) scale(1.08)'" onmouseout="this.style.transform='translate(-50%,-50%) scale(1)'">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
               </div>
               <!-- Label -->
-              <div style="position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:12px;color:rgba(255,255,255,0.7);letter-spacing:0.08em;text-transform:uppercase;">60-second demo</div>
+              <div style="position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);letter-spacing:0.1em;text-transform:uppercase;font-weight:600;">Real Machine • 90-second demo</div>
             </div>
           </div>
-          <p class="video-label">Click to watch • 60-second machine demo</p>
+          <p class="video-label">Click to watch • Full wash cycle start to finish</p>
           <script>
             function playVideo() {
               var c = document.getElementById('video-container');
-              c.innerHTML = '<iframe style="width:100%;height:100%;display:block;" src="https://www.youtube-nocookie.com/embed/cC5JToVEyiw?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&color=white&playsinline=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+              c.innerHTML = '<video style="width:100%;height:100%;display:block;background:#000;" src="https://raw.githubusercontent.com/Sudspect/sudspect-landing/main/sudspect_demo.mp4" autoplay controls playsinline></video>';
             }
           </script>
         </div>
