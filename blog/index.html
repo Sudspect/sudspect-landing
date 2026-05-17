@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources & Insights — Sudspect Dog Wash</title>
+  <meta name="description" content="Practical guides for property managers and HOA directors on pet amenities, lease renewals, and revenue share programs." />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'General Sans', system-ui, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.75; }
+    .header { background: #1e2a1e; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
+    .header a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .header span { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.25rem; color: #fff; letter-spacing: 0.04em; }
+    .container { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+    .page-header { margin-bottom: 2.5rem; }
+    h1 { font-family: 'Clash Display', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .subtitle { font-size: 1.05rem; color: #555; }
+    h2 { font-family: 'Clash Display', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 2rem 0 1rem; color: #1e2a1e; }
+    p { margin-bottom: 1rem; color: #333; }
+    a { color: #E8580A; }
+    hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
+    .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
+    @media (max-width: 580px) { .cards-grid { grid-template-columns: 1fr; } }
+    .card { border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: box-shadow 0.15s; }
+    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .category-pill { display: inline-block; background: #fff3ec; color: #E8580A; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #fbd7c3; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; }
+    .card-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #1a1a1a; line-height: 1.3; }
+    .card-excerpt { font-size: 0.9rem; color: #555; line-height: 1.6; flex: 1; }
+    .card-meta { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0f0f0; }
+    .read-time { font-size: 0.8rem; color: #999; }
+    .read-link { font-size: 0.875rem; font-weight: 600; color: #E8580A; text-decoration: none; }
+    .read-link:hover { text-decoration: underline; }
+    .news-card { border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; display: flex; align-items: flex-start; gap: 1.25rem; transition: box-shadow 0.15s; }
+    .news-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .news-tag { display: inline-block; background: #f0f4f0; color: #1e2a1e; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #d0dbd0; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; white-space: nowrap; }
+    .news-content { flex: 1; }
+    .news-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #1a1a1a; line-height: 1.3; margin-bottom: 0.4rem; }
+    .news-excerpt { font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 0.75rem; }
+    .cta-box { background: #1e2a1e; color: #fff; padding: 2.5rem 2rem; border-radius: 12px; margin: 3rem 0 2rem; text-align: center; }
+    .cta-box h2 { color: #fff; margin: 0 0 0.75rem; font-size: 1.4rem; }
+    .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; }
+    .cta-btn { display: inline-block; background: #E8580A; color: #fff; font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1rem; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; letter-spacing: 0.02em; }
+    .cta-btn:hover { background: #d14d09; color: #fff; }
+    footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #999; border-top: 1px solid #eee; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="/">
+      <img src="/logo.jpg" alt="Sudspect" width="38" height="38" style="border-radius:6px;border:2px solid #E8580A;" />
+      <span>SUDSPECT</span>
+    </a>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>Resources &amp; Insights</h1>
+      <p class="subtitle">Practical guides for property managers and HOA directors</p>
+    </div>
+
+    <hr />
+
+    <h2>Latest Articles</h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <span class="category-pill">Property Management</span>
+        <div class="card-title">The 7 Best Pet Amenities for Apartment Communities in 2026</div>
+        <div class="card-excerpt">Pet-friendliness has moved beyond "pets allowed." Discover the amenities that drive lease signings, boost satisfaction scores, and keep pet-owning residents from leaving.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read</span>
+          <a class="read-link" href="./pet-amenities.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill">Property Management</span>
+        <div class="card-title">How Pet Amenities Increase Lease Renewals at Apartment Complexes</div>
+        <div class="card-excerpt">Pet-owning renters move less often — and when a property gives them real reasons to stay, they stay for years. Here's the data behind pet amenities and renewal rates.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read</span>
+          <a class="read-link" href="./lease-renewals.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill">Resident Guide</span>
+        <div class="card-title">Self-Service Dog Wash vs. Groomer: What's Better for Apartment Residents?</div>
+        <div class="card-excerpt">A side-by-side comparison of cost, convenience, and frequency — and why most dog owners end up using both. Understanding the grooming gap that on-site stations fill.</div>
+        <div class="card-meta">
+          <span class="read-time">4 min read</span>
+          <a class="read-link" href="./dog-wash-vs-groomer.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill">Revenue &amp; NOI</span>
+        <div class="card-title">Revenue Share Amenity Programs: How Florida Properties Earn Passive Income</div>
+        <div class="card-excerpt">Zero-cost placements, maintenance-free operations, and a monthly revenue split. How the revenue share model works and what to look for in a partner before signing.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read</span>
+          <a class="read-link" href="./revenue-share.html">Read article →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <h2>In the News</h2>
+
+    <div class="news-card">
+      <span class="news-tag">Press Release</span>
+      <div class="news-content">
+        <div class="news-title">Veteran-Owned Startup Brings Florida's First AI-Powered Dog Wash Vending Machines to Apartment Communities</div>
+        <div class="news-excerpt">Sudspect Dog Wash LLC announces zero-cost, revenue-share dog wash placements for Florida HOAs and apartment communities with 150+ units.</div>
+        <a class="read-link" href="/press-release.html">Read press release →</a>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h2>Is Your Property a Good Fit?</h2>
+      <p>Zero upfront cost. We install, maintain, and operate. Your property earns a share of every wash.</p>
+      <a class="cta-btn" href="https://sudspect.com/#contact">Check Availability</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Sudspect Dog Wash LLC · <a href="/">sudspect.com</a> · <a href="mailto:hello@sudspect.com">hello@sudspect.com</a>
+  </footer>
+
+</body>
+</html>
