@@ -4,52 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources & Insights — Sudspect Dog Wash</title>
-  <meta name="description" content="Practical guides for property managers and HOA directors on pet amenities, lease renewals, and revenue share programs." />
+  <meta name="description" content="Practical guides for property managers and HOA directors on pet amenities, lease renewals, dog wash stations, and revenue share programs in Florida." />
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'General Sans', system-ui, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.75; }
-    .header { background: #1e2a1e; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
+    body { font-family: 'General Sans', system-ui, sans-serif; color: #1a2038; background: #fff; line-height: 1.75; }
+    .header { background: #0f1e3d; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
     .header a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
     .header span { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.25rem; color: #fff; letter-spacing: 0.04em; }
-    .container { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+    .container { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
     .page-header { margin-bottom: 2.5rem; }
-    h1 { font-family: 'Clash Display', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .subtitle { font-size: 1.05rem; color: #555; }
-    h2 { font-family: 'Clash Display', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 2rem 0 1rem; color: #1e2a1e; }
+    h1 { font-family: 'Clash Display', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; color: #0f1e3d; }
+    .subtitle { font-size: 1.05rem; color: #566278; }
+    h2 { font-family: 'Clash Display', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 2rem 0 1rem; color: #0f1e3d; }
     p { margin-bottom: 1rem; color: #333; }
-    a { color: #E8580A; }
-    hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
+    a { color: #2B5BA8; }
+    hr { border: none; border-top: 1px solid #d4dce8; margin: 2rem 0; }
     .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0; }
     @media (max-width: 580px) { .cards-grid { grid-template-columns: 1fr; } }
-    .card { border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: box-shadow 0.15s; }
-    .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-    .category-pill { display: inline-block; background: #fff3ec; color: #E8580A; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #fbd7c3; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; }
-    .card-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #1a1a1a; line-height: 1.3; }
-    .card-excerpt { font-size: 0.9rem; color: #555; line-height: 1.6; flex: 1; }
-    .card-meta { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #f0f0f0; }
-    .read-time { font-size: 0.8rem; color: #999; }
-    .read-link { font-size: 0.875rem; font-weight: 600; color: #E8580A; text-decoration: none; }
+    .card { border: 1px solid #d4dce8; border-radius: 10px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: box-shadow 0.15s, border-color 0.15s; }
+    .card:hover { box-shadow: 0 4px 16px rgba(43,91,168,0.10); border-color: #4a7fd4; }
+    .category-pill { display: inline-block; background: #eef3fb; color: #2B5BA8; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #c8d6e5; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; }
+    .category-pill.hoa { background: #eef3fb; color: #1e4280; border-color: #b0c4e0; }
+    .category-pill.florida { background: #e8f4fd; color: #1a5276; border-color: #aed6f1; }
+    .category-pill.revenue { background: #eafaf1; color: #1e8449; border-color: #a9dfbf; }
+    .category-pill.resident { background: #fdf2f8; color: #7d3c98; border-color: #d7bde2; }
+    .card-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #0f1e3d; line-height: 1.3; }
+    .card-excerpt { font-size: 0.9rem; color: #566278; line-height: 1.6; flex: 1; }
+    .card-meta { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 0.75rem; border-top: 1px solid #eaeff6; }
+    .read-time { font-size: 0.8rem; color: #8a99b3; }
+    .read-link { font-size: 0.875rem; font-weight: 600; color: #2B5BA8; text-decoration: none; }
     .read-link:hover { text-decoration: underline; }
-    .news-card { border: 1px solid #eee; border-radius: 10px; padding: 1.5rem; display: flex; align-items: flex-start; gap: 1.25rem; transition: box-shadow 0.15s; }
-    .news-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
-    .news-tag { display: inline-block; background: #f0f4f0; color: #1e2a1e; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #d0dbd0; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; white-space: nowrap; }
+    .news-card { border: 1px solid #d4dce8; border-radius: 10px; padding: 1.5rem; display: flex; align-items: flex-start; gap: 1.25rem; transition: box-shadow 0.15s; }
+    .news-card:hover { box-shadow: 0 4px 16px rgba(43,91,168,0.10); }
+    .news-tag { display: inline-block; background: #eef3fb; color: #1e4280; font-size: 0.7rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 100px; border: 1px solid #c8d6e5; letter-spacing: 0.03em; text-transform: uppercase; width: fit-content; white-space: nowrap; }
     .news-content { flex: 1; }
-    .news-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #1a1a1a; line-height: 1.3; margin-bottom: 0.4rem; }
-    .news-excerpt { font-size: 0.9rem; color: #555; line-height: 1.6; margin-bottom: 0.75rem; }
-    .cta-box { background: #1e2a1e; color: #fff; padding: 2.5rem 2rem; border-radius: 12px; margin: 3rem 0 2rem; text-align: center; }
+    .news-title { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.05rem; color: #0f1e3d; line-height: 1.3; margin-bottom: 0.4rem; }
+    .news-excerpt { font-size: 0.9rem; color: #566278; line-height: 1.6; margin-bottom: 0.75rem; }
+    .cta-box { background: linear-gradient(135deg, #0f1e3d 0%, #162342 100%); color: #fff; padding: 2.5rem 2rem; border-radius: 12px; margin: 3rem 0 2rem; text-align: center; }
     .cta-box h2 { color: #fff; margin: 0 0 0.75rem; font-size: 1.4rem; }
     .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; }
-    .cta-btn { display: inline-block; background: #E8580A; color: #fff; font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1rem; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; letter-spacing: 0.02em; }
-    .cta-btn:hover { background: #d14d09; color: #fff; }
-    footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #999; border-top: 1px solid #eee; }
+    .cta-btn { display: inline-block; background: #2B5BA8; color: #fff; font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1rem; padding: 0.85rem 2rem; border-radius: 8px; text-decoration: none; letter-spacing: 0.02em; transition: background 0.15s; }
+    .cta-btn:hover { background: #1e4280; color: #fff; }
+    footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #8a99b3; border-top: 1px solid #d4dce8; }
+    .new-badge { display: inline-block; background: #2B5BA8; color: #fff; font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 100px; letter-spacing: 0.04em; text-transform: uppercase; margin-left: 0.4rem; vertical-align: middle; }
   </style>
 </head>
 <body>
 
   <div class="header">
     <a href="/">
-      <img src="/logo.jpg" alt="Sudspect" width="38" height="38" style="border-radius:6px;border:2px solid #E8580A;" />
+      <img src="/logo.png" alt="Sudspect" width="28" height="35" style="border-radius:6px;" />
       <span>SUDSPECT</span>
     </a>
   </div>
@@ -57,12 +62,60 @@
   <div class="container">
     <div class="page-header">
       <h1>Resources &amp; Insights</h1>
-      <p class="subtitle">Practical guides for property managers and HOA directors</p>
+      <p class="subtitle">Practical guides for property managers and HOA directors across Florida</p>
     </div>
 
     <hr />
 
-    <h2>Latest Articles</h2>
+    <h2>Latest Articles <span class="new-badge">4 New</span></h2>
+
+    <div class="cards-grid">
+
+      <div class="card">
+        <span class="category-pill">Property Management</span>
+        <div class="card-title">How to Attract Pet Owners to Your Apartment Complex in 2026</div>
+        <div class="card-excerpt">Pet-owning renters are the most loyal, highest-value tenants in multifamily. Here's exactly how to market your property, upgrade your amenities, and fill vacancies faster.</div>
+        <div class="card-meta">
+          <span class="read-time">6 min read · May 20, 2026</span>
+          <a class="read-link" href="./attract-pet-owners.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill hoa">HOA Management</span>
+        <div class="card-title">HOA Pet Amenities: What Homeowners Actually Want in 2026</div>
+        <div class="card-excerpt">Pet ownership in HOA communities has surged. Discover which amenities homeowners are actually requesting — and which deliver the most value for boards on a budget.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read · May 21, 2026</span>
+          <a class="read-link" href="./hoa-pet-amenities.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill">Property Management</span>
+        <div class="card-title">The True Cost of Installing a Dog Wash Station at Your Apartment Complex</div>
+        <div class="card-excerpt">Equipment, plumbing, liability, maintenance — the real costs add up fast. Here's the full breakdown before you budget for a dog wash station, and a smarter alternative.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read · May 22, 2026</span>
+          <a class="read-link" href="./dog-wash-station-cost.html">Read article →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="category-pill florida">Florida Real Estate</span>
+        <div class="card-title">Why Florida Apartment Communities Are Adding Self-Service Dog Wash Stations</div>
+        <div class="card-excerpt">Florida's year-round climate, rainy season, and booming pet-owner population are driving demand for on-site dog wash stations across Miami, Tampa, Orlando, and beyond.</div>
+        <div class="card-meta">
+          <span class="read-time">5 min read · May 23, 2026</span>
+          <a class="read-link" href="./florida-apartment-dog-wash.html">Read article →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <h2>Earlier Articles</h2>
 
     <div class="cards-grid">
 
@@ -87,7 +140,7 @@
       </div>
 
       <div class="card">
-        <span class="category-pill">Resident Guide</span>
+        <span class="category-pill resident">Resident Guide</span>
         <div class="card-title">Self-Service Dog Wash vs. Groomer: What's Better for Apartment Residents?</div>
         <div class="card-excerpt">A side-by-side comparison of cost, convenience, and frequency — and why most dog owners end up using both. Understanding the grooming gap that on-site stations fill.</div>
         <div class="card-meta">
@@ -97,7 +150,7 @@
       </div>
 
       <div class="card">
-        <span class="category-pill">Revenue &amp; NOI</span>
+        <span class="category-pill revenue">Revenue &amp; NOI</span>
         <div class="card-title">Revenue Share Amenity Programs: How Florida Properties Earn Passive Income</div>
         <div class="card-excerpt">Zero-cost placements, maintenance-free operations, and a monthly revenue split. How the revenue share model works and what to look for in a partner before signing.</div>
         <div class="card-meta">
@@ -124,7 +177,7 @@
     <div class="cta-box">
       <h2>Is Your Property a Good Fit?</h2>
       <p>Zero upfront cost. We install, maintain, and operate. Your property earns a share of every wash.</p>
-      <a class="cta-btn" href="https://sudspect.com/#contact">Check Availability</a>
+      <a class="cta-btn" href="https://sudspect.com/#availability">Check Availability</a>
     </div>
   </div>
 
