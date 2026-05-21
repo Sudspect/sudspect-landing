@@ -3,106 +3,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Sudspect Dog Wash</title>
+  <title>Privacy Policy — Sudspect Dog Wash LLC</title>
+  <meta name="description" content="Privacy Policy for Sudspect Dog Wash LLC. Learn how we collect, use, and protect your personal information." />
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://sudspect.com/privacy.html" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'General Sans', system-ui, sans-serif; color: #1a1a1a; background: #fff; line-height: 1.75; }
-    .header { background: #1e2a1e; padding: 1.25rem 2rem; display: flex; align-items: center; gap: 0.75rem; }
-    .header a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
-    .header span { font-family: 'Clash Display', sans-serif; font-weight: 700; font-size: 1.25rem; color: #fff; letter-spacing: 0.04em; }
-    .container { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
-    h1 { font-family: 'Clash Display', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .updated { font-size: 0.875rem; color: #666; margin-bottom: 2.5rem; }
-    h2 { font-family: 'Clash Display', sans-serif; font-size: 1.2rem; font-weight: 700; margin: 2rem 0 0.5rem; color: #1e2a1e; }
-    p { margin-bottom: 1rem; color: #333; }
-    ul { margin: 0.5rem 0 1rem 1.5rem; color: #333; }
-    ul li { margin-bottom: 0.35rem; }
-    a { color: #E8580A; }
-    .highlight { background: #fff3ec; border-left: 4px solid #E8580A; padding: 1rem 1.25rem; border-radius: 0 8px 8px 0; margin: 1.5rem 0; }
-    .highlight p { margin: 0; font-weight: 600; }
-    footer { text-align: center; padding: 2rem; font-size: 0.8rem; color: #999; border-top: 1px solid #eee; }
+    .legal-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .legal-page h1 {
+      font-family: 'Clash Display', sans-serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      color: var(--navy, #0f1e3d);
+      margin-bottom: 8px;
+    }
+    .legal-page .last-updated {
+      color: #6b7a99;
+      font-size: 0.9rem;
+      margin-bottom: 48px;
+    }
+    .legal-page h2 {
+      font-family: 'Clash Display', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy, #0f1e3d);
+      margin: 40px 0 12px;
+    }
+    .legal-page p, .legal-page li {
+      font-family: 'General Sans', sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #374151;
+      margin-bottom: 16px;
+    }
+    .legal-page ul {
+      padding-left: 24px;
+      margin-bottom: 16px;
+    }
+    .legal-page a {
+      color: var(--blue, #2B5BA8);
+      text-decoration: underline;
+    }
+    .legal-page .highlight-box {
+      background: #f0f4ff;
+      border-left: 4px solid var(--blue, #2B5BA8);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin: 24px 0;
+    }
+    .legal-page .highlight-box p {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <a href="/">
-      <img src="logo.jpg" alt="Sudspect" width="38" height="38" style="border-radius:6px;border:2px solid #E8580A;" />
-      <span>SUDSPECT</span>
-    </a>
-  </div>
-
-  <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: May 15, 2026</p>
-
-    <p>Sudspect Dog Wash LLC ("Sudspect," "we," "us," or "our") operates sudspect.com and related services. This Privacy Policy explains how we collect, use, and protect your information when you interact with our website or communications.</p>
-
-    <h2>1. Information We Collect</h2>
-    <p>When you submit an inquiry through our website, we may collect:</p>
-    <ul>
-      <li>Name and contact information (email address, phone number)</li>
-      <li>Property name, city, and unit count</li>
-      <li>Property type and any additional details you provide</li>
-      <li>SMS/text message consent status</li>
-    </ul>
-
-    <h2>2. SMS / Text Message Communications</h2>
-    <div class="highlight">
-      <p>By checking the SMS consent box on our contact form, you expressly consent to receive text messages from Sudspect Dog Wash at the phone number you provided.</p>
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Sudspect home">
+        <img src="logo.png" alt="Sudspect bulldog logo" class="nav-logo-img" width="35" height="44" />
+        <span class="nav-logo-text">SUDSPECT</span>
+      </a>
+      <nav class="nav-links" role="navigation" aria-label="Main navigation">
+        <a href="index.html#how-it-works">How It Works</a>
+        <a href="index.html#benefits">Benefits</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="/blog/">Blog</a>
+        <a href="index.html#contact" class="nav-cta">Check Availability</a>
+      </nav>
     </div>
-    <p>Details of our SMS program:</p>
-    <ul>
-      <li><strong>Message types:</strong> Follow-up information about our dog wash amenity program, scheduling requests, and business communications</li>
-      <li><strong>Frequency:</strong> Message frequency varies — typically 2–5 messages per inquiry</li>
-      <li><strong>Rates:</strong> Message and data rates may apply depending on your mobile carrier</li>
-      <li><strong>Opt-out:</strong> Reply <strong>STOP</strong> at any time to unsubscribe from SMS communications. You will receive a confirmation message and no further texts will be sent</li>
-      <li><strong>Help:</strong> Reply <strong>HELP</strong> for assistance, or contact us at <a href="mailto:hello@sudspect.com">hello@sudspect.com</a></li>
-      <li><strong>No purchase required:</strong> SMS consent is not a condition of any purchase or service</li>
-    </ul>
-    <p>We do not sell or share your phone number with third-party marketers for their own SMS campaigns.</p>
+  </header>
 
-    <h2>3. How We Use Your Information</h2>
-    <ul>
-      <li>To respond to your inquiry and provide a custom proposal</li>
-      <li>To follow up via email, phone, or SMS (if consented)</li>
-      <li>To improve our services and marketing communications</li>
-      <li>To comply with legal obligations</li>
-    </ul>
+  <main>
+    <div class="legal-page">
+      <h1>Privacy Policy</h1>
+      <p class="last-updated">Last updated: May 21, 2026</p>
 
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell your personal information. We may share information with trusted service providers who assist us in operating our business (such as email delivery and CRM services), subject to confidentiality agreements. We will not share your SMS consent or phone number with any third party for marketing purposes.</p>
+      <div class="highlight-box">
+        <p>Your phone number and personal information will never be sold or shared with third parties for marketing purposes. We do not share SMS opt-in data with any third party.</p>
+      </div>
 
-    <h2>5. Data Retention</h2>
-    <p>We retain your information for as long as necessary to fulfill the purposes outlined in this policy or as required by law. You may request deletion of your data at any time by contacting us at <a href="mailto:hello@sudspect.com">hello@sudspect.com</a>.</p>
+      <p>Sudspect Dog Wash LLC ("Sudspect," "we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://sudspect.com">sudspect.com</a>, fill out our contact form, or communicate with us via email, phone, or SMS.</p>
 
-    <h2>6. Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li>Access the personal information we hold about you</li>
-      <li>Request correction or deletion of your data</li>
-      <li>Opt out of SMS communications at any time by replying STOP</li>
-      <li>Opt out of email communications by clicking the unsubscribe link in any email</li>
-    </ul>
+      <h2>1. Information We Collect</h2>
+      <p>We may collect the following types of information:</p>
+      <ul>
+        <li><strong>Contact Information:</strong> Name, email address, phone number, property name, and job title when you submit our contact or availability form.</li>
+        <li><strong>Business Information:</strong> Property address, number of units, and community type to determine service eligibility.</li>
+        <li><strong>Usage Data:</strong> Pages visited, time spent on pages, and referral source, collected via standard web analytics.</li>
+        <li><strong>Communications:</strong> Records of emails, SMS messages, and calls exchanged between you and Sudspect.</li>
+      </ul>
 
-    <h2>7. Security</h2>
-    <p>We implement reasonable technical and organizational safeguards to protect your information from unauthorized access, disclosure, or misuse.</p>
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Respond to inquiries and follow up on partnership or installation requests.</li>
+        <li>Send SMS messages, emails, or make phone calls to business contacts who have opted in to receive communications from Sudspect Dog Wash LLC.</li>
+        <li>Schedule site assessments, demos, or consultations.</li>
+        <li>Send information about our dog wash amenity programs, revenue-share opportunities, and service updates.</li>
+        <li>Improve our website and services.</li>
+        <li>Comply with legal obligations.</li>
+      </ul>
 
-    <h2>8. Contact Us</h2>
-    <p>For privacy-related questions or requests, contact us at:</p>
-    <ul>
-      <li><strong>Email:</strong> <a href="mailto:hello@sudspect.com">hello@sudspect.com</a></li>
-      <li><strong>Phone:</strong> <a href="tel:+18337837732">(833) SUDSPECT — 833-783-7732</a></li>
-      <li><strong>Business:</strong> Sudspect Dog Wash LLC, Florida</li>
-    </ul>
+      <h2>3. SMS Communications</h2>
+      <p>By submitting our contact form and checking the SMS consent checkbox, you expressly consent to receive text messages from Sudspect Dog Wash LLC at the phone number you provide. Message frequency varies (typically 2–4 messages per month per contact). Message and data rates may apply.</p>
+      <ul>
+        <li><strong>To opt out:</strong> Reply <strong>STOP</strong> to any SMS message at any time. You will receive one confirmation message and no further SMS messages will be sent.</li>
+        <li><strong>For help:</strong> Reply <strong>HELP</strong> or contact us at <a href="mailto:hello@sudspect.com">hello@sudspect.com</a> or <a href="tel:8337837732">(833) SUDSPECT</a>.</li>
+        <li><strong>No sharing:</strong> SMS opt-in data and phone numbers collected for SMS purposes are never sold, rented, or shared with third parties or affiliates for their marketing purposes.</li>
+      </ul>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. Continued use of our services after changes constitutes acceptance of the updated policy.</p>
-  </div>
+      <h2>4. How We Share Your Information</h2>
+      <p>We do not sell, trade, rent, or otherwise transfer your personal information to third parties, except in the following limited circumstances:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> We may share data with trusted vendors who assist in operating our website, CRM, or communications platforms (e.g., email delivery, SMS delivery). These vendors are contractually obligated to keep your information confidential and may not use it for any purpose other than providing services to Sudspect.</li>
+        <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in response to valid legal requests from public authorities.</li>
+        <li><strong>Business Transfer:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.</li>
+      </ul>
 
-  <footer>
-    © 2026 Sudspect Dog Wash LLC · <a href="/">sudspect.com</a> · <a href="mailto:hello@sudspect.com">hello@sudspect.com</a>
+      <h2>5. Data Retention</h2>
+      <p>We retain your contact information for as long as it is necessary to fulfill the purposes outlined in this Privacy Policy, or as required by law. If you request deletion of your information, we will remove it from our active systems within 30 days, except where retention is required for legal compliance.</p>
+
+      <h2>6. Cookies and Analytics</h2>
+      <p>Our website may use cookies and similar tracking technologies to analyze web traffic and improve user experience. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some portions of our site may not function properly without cookies.</p>
+
+      <h2>7. Security</h2>
+      <p>We implement commercially reasonable administrative, technical, and physical safeguards to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>Our services are directed to business professionals and are not intended for individuals under the age of 18. We do not knowingly collect personal information from children under 18. If you believe we have inadvertently collected such information, please contact us immediately.</p>
+
+      <h2>9. Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Request access to the personal information we hold about you.</li>
+        <li>Request correction of inaccurate information.</li>
+        <li>Request deletion of your personal information.</li>
+        <li>Opt out of SMS communications at any time by replying STOP.</li>
+        <li>Opt out of email communications at any time by clicking the unsubscribe link in any email.</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:hello@sudspect.com">hello@sudspect.com</a>.</p>
+
+      <h2>10. Third-Party Links</h2>
+      <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
+
+      <h2>11. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will post the revised policy on this page with an updated "Last updated" date. Your continued use of our website or services after any changes constitutes your acceptance of the new policy.</p>
+
+      <h2>12. Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+      <ul>
+        <li><strong>Sudspect Dog Wash LLC</strong></li>
+        <li>Email: <a href="mailto:hello@sudspect.com">hello@sudspect.com</a></li>
+        <li>Phone: <a href="tel:8337837732">(833) SUDSPECT — (833) 783-7732</a></li>
+        <li>Mailing Address: 7901 4th St N #32005, St. Petersburg, FL 33702</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Sudspect" class="footer-logo-img" width="29" height="36" />
+            <span>SUDSPECT</span>
+          </div>
+          <p>Professional pet care amenities for residential communities.</p>
+          <p class="footer-vosb">🇺🇸 Veteran-Owned Small Business</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@sudspect.com">hello@sudspect.com</a>
+          <a href="tel:+18337837732">(833) SUDSPECT</a>
+          <a href="index.html#contact">Request a Proposal</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="index.html#how-it-works">How It Works</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Sudspect Dog Wash LLC. All rights reserved. Veteran-Owned Small Business.</p>
+      </div>
+    </div>
   </footer>
 
 </body>
