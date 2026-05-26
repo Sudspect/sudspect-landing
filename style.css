@@ -215,7 +215,7 @@ summary::-webkit-details-marker { display: none; }
 .section { padding-block: clamp(var(--s16), 8vw, var(--s24)); }
 .section--dark { background: linear-gradient(160deg, #0f1e3d 0%, #162342 100%); }
 .section--gray { background: var(--gray-100); }
-.section--contact { background: linear-gradient(160deg, #1a2e1e 0%, #1e3525 100%); }
+.section--contact { background: linear-gradient(160deg, #0d2a5e 0%, #1a4a8a 60%, #2b6cb0 100%); }
 
 .section-header { text-align: center; max-width: 580px; margin-inline: auto; margin-bottom: clamp(var(--s10), 5vw, var(--s16)); }
 .section-label {
